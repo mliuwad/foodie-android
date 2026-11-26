@@ -181,7 +181,7 @@ app/src/main/java/com/example/foodie/
 └── utils/          # NotificationHelper
 ```
 
-Các màn hình khách và một số lớp dùng chung nằm tại package gốc. Backend AI là project Node.js riêng; có thể đặt trong thư mục `foodie-ai-server/` khi tổ chức repository.
+Các màn hình khách và một số lớp dùng chung nằm tại package gốc. Backend AI là project Node.js riêng; có thể đặt trong thư mục `backend/` khi tổ chức repository.
 
 ### 4.2. Luồng gửi đơn và cập nhật trạng thái
 
@@ -390,10 +390,11 @@ Local Notification yêu cầu quyền trên Android 13 trở lên. Không đảm
 
 ### 8.3. Backend AI (debug local)
 
-Nếu backend được đặt trong repository tại `foodie-ai-server/`, mở terminal trong thư mục đó. Nếu backend nằm riêng, thực hiện các bước tương tự tại thư mục backend.
+Backend AI nằm trong thư mục `backend/` của repository. Từ thư mục gốc, chạy:
 
 ```bash
-npm install
+cd backend
+npm ci
 ```
 
 Tạo `.env` từ `.env.example` và cấu hình bằng thông tin của môi trường được phép sử dụng:
