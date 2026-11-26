@@ -1,0 +1,39 @@
+# Android Studio
+.idea/
+*.iml
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Gradle & Kotlin
+.gradle/
+.kotlin/
+**/build/
+
+# Firebase
+**/google-services.json
+
+# Node.js
+node_modules/
+**/node_modules/
+npm-debug.log*
+
+# Environment & API keys
+.env
+.env.*
+!.env.example
+**/serviceAccountKey.json
+secrets.properties
+
+# Signing keys
+*.jks
+*.keystore
+keystore.properties
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
